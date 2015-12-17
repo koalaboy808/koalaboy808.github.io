@@ -1,0 +1,148 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <script src="js/bootstrap.min.js"></script>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/chocolat.css" />
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="js/jquery.chocolat.js"></script>
+    <link href="css/customized.css" rel="stylesheet">
+    
+    <title>Chocolat — demo</title>
+    <script>
+        $(function(){
+            $('#example0').Chocolat({
+                  imageSize: 'contain'
+            });
+
+            $('#example1').Chocolat({
+                loop           : true,
+                imageSize     : 'cover',
+                overlayOpacity : 0.9
+            });
+
+        });
+    </script>
+
+</head>
+
+<body>
+    <div class="container-fluid">
+        <a href="index.html#projects" class = "p_home img_responsive"  > home </a>
+        <p class="h1_projects" style="color: #1E4F53;"> Labor2Day: </p>
+        <!-- <p class="h2_projects"> 2nd Place in Hackathon for Smart Cities Competition </p> -->
+        <a href="http://www.ischool.berkeley.edu/newsandevents/news/20151020-motm-hackathon" target="_blank" class="h2_projects" > 2nd Place Finalist in Smart & Sustainable Cities Hackathon </a>
+        <p class = "p_projects" style="color: #7F7F7F;"> [User Research] [User Experience] [Javascript] [Twilio] </p>
+        </br></br>
+
+
+        <a href="http://www.ischool.berkeley.edu/newsandevents/news/20151020-motm-hackathon" target="_blank" class="image featured"><img src="img/portfolio/motm_userresearch.JPG" class="img-responsive" alt="" style="height:350px;border:0, auto:width;"></a>
+
+        <div id="example0">
+            <a class="chocolat-image" href="img/portfolio/motm_architecture.jpg" title="foo">
+                <img src="img/portfolio/motm_architecture.jpg" style="width:50px; height:auto" alt="">
+            </a>
+            <a class="chocolat-image" href="img/portfolio/motm_flow.jpg" title="foo">
+                <img src="img/portfolio/motm_flow.jpg" style="width:50px; height:auto" alt="">
+            </a>
+            <a class="chocolat-image" href="img/portfolio/motm_laborer.png" title="foo">
+                <img src="img/portfolio/motm_laborer.png" style="width:50px; height:auto" alt="">
+            </a>
+            <a class="chocolat-image" href="img/portfolio/motm_outlining.JPG" title="foo">
+                <img src="img/portfolio/motm_outlining.JPG" style="width:50px; height:auto" alt="">
+            </a>
+            <a class="chocolat-image" href="img/portfolio/motm_guides.JPG" title="foo">
+                <img src="img/portfolio/motm_guides.JPG" style="width:50px; height:auto" alt="">
+            </a>
+            <a class="chocolat-image" href="img/portfolio/motm_speach.jpg" title="foo">
+                <img src="img/portfolio/motm_speach.jpg" style="width:50px; height:auto" alt="">
+            </a>
+        </div>
+
+        </br>
+        <a href="http://www.ischool.berkeley.edu/newsandevents/news/20151020-motm-hackathon" target="_blank" > Click to view the UC Berkeley news article </a>
+        </br></br></br></br>
+
+        <hr>
+        <div class="row">
+            <div class="col-sm-3">
+                <div class="h2_fitted"> Role </div>
+            </div>
+            <div class="col-sm-9">
+                <p class = "p_projects">
+                    Worked on User Research and User Experience portion of the project as well as database architecture.
+                </p>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-sm-3">
+                <div class="h2_fitted"> Motivation </div>
+            </div>
+            <div class="col-sm-9">
+                <p class = "p_projects">
+                    The Meeting of the Minds convention is an annual event in which 400+ VIPs from 25+ countries convene to discuss smart and sustainable cities. This year the event was hosted in Richmond, CA. Qualcom and Microsoft helped sponser the hackthon where teams were challenged to develop new technologies that improve the livability, sustainability, and connectedness of the city of Richmond. Teams were judged by completeness of the solution and how relevant the tool was to the Mayor's Office and citizens of Richmond, CA. 
+                </p>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-sm-3">
+                <div class="h2_fitted"> User Experience Research </div>
+            </div>
+            <div class="col-sm-9">
+                <p class = "p_projects">
+                    The team approached the competition with the goal of answering this city directive: "Accelerate economic development, better prepare applicants for job interviews, or help place Richmond residents in available jobs in their community." After brainstorming and researching the city's background, we decdied to develop an information portal acccesible via web that would allow job seekers and company managers to share information. The assumptions made were that there existed a discord between the individuals offering jobs and the individuals seeking jobs. By creating a common portal, job seekers could gain the necessary skills for the job market, and managers could get a better lay of the land. 
+                    </br></br>
+                    However, our assumptions were wrong. We spoke with a variety of citizens from Richmond at the Meeting of the Minds event--from construction workers, to life coaches, and small business owners. What we discovered was that the largest job market going unmet was that of day laborers. Such workers wandered outside of establishments like Lowes, sometimes for an entire day without work. We hoped to address this very problem by creating a text-based messaging application.
+                </p>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-sm-3">
+                <div class="h2_fitted"> Solution </div>
+            </div>
+            <div class="col-sm-9">
+                <p class = "p_projects">
+                    We created a text-based messaging system called Labor2Day to connect day laborers with local employers. As mentioned above, many of Richmond’s day laborers had no idea where to look for jobs. Similarly, employers had little insight on how to contract short-term service. Using the new system, employers input today’s or tomorrow’s job needs via a web application. The laborers text their name to a number and are led through a sequence of questions. The information is automatically processed and queried in real-time, and potential matches are sent back.Labor2Day does not require WiFi or online access, making it as accessible as possible to day laborers.
+                </p>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-sm-3">
+                <div class="h2_fitted">  Demonstration </div>
+            </div>
+            <div class="col-sm-9">
+                <p class = "p_projects">
+                    We produced a working prototype using Twilio. Users could text their name and preferences through the text-based system and receive the appropriate responses. We setup a Microsoft Azure databse to house the information. However, given the constraint of time, we were unable to connect the two technologies. We have been invited to present our tool to a high school come Spring of 2016. We plan to create a fully functioning version of our prototype by then. Additionally, we will have half a day to hold tech workshops and speak to students about how they can become involved in this booming tech industry.
+                </p>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-sm-3">
+                <div class="h2_fitted">  Reflection </div>
+            </div>
+            <div class="col-sm-9">
+                <p class = "p_projects">
+                    There were many other teams who developed technologies more advanced than ours. One such team used the hardware provided by Qualcom to create a geolocation system that could detect a stolen bike. Another team used neural netowrk processes to control electrcity. What these teams failed to do was answer the most pertinent question of, "How does your solution address the problems of Richmond?" We tackled our problem with a very human-centered mindset. Tools are only as smart as the service it provides.
+                </p>
+            </div>
+        </div>
+
+
+        </br></br></br></br>
+        <p class = "p_projects" style="margin-left:0px;"> Group Members: Pratik Nadagouda, Parv Sondhi, Astika Gupta, Shirish Dhar, Daniel Brenners
+        </p>
+        </br>
+        <!-- <a href="https://github.com/hatsy/Emojineering" target="_blank" class = "p_home" style="color:#1E4F53;" > Follow the Project on GitHub </a> -->
+    <a href="index.html#projects" class = "p_home img_responsive"  > home</a>    
+    </br></br>
+    </div>
+    
+</body>
+</html>

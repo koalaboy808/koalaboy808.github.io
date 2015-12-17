@@ -3,6 +3,8 @@
 <html lang="en">
 <head>
     <meta charset="utf-8" />
+    <script src="js/bootstrap.min.js"></script>
+    <link href="css/bootstrap.css" rel="stylesheet">
     <link rel="stylesheet" href="css/chocolat.css" />
     <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
     <script type="text/javascript" src="js/jquery.chocolat.js"></script>
@@ -38,57 +40,105 @@
         <a class="image featured"><img src="img/portfolio/emoji_cropped.png" class="img-responsive" alt="" style="height:350px;border:0, auto:width;"></a>
 
         <div id="example0">
+            <a class="chocolat-image" href="img/portfolio/Emojineering_prelimainary.png" title="foo">
+                <img src="img/portfolio/Emojineering_prelimainary.png" style="width:50px; height:auto" alt="">
+            </a>
             <a class="chocolat-image" href="img/portfolio/emoji_timeline.png" title="foo">
                 <img src="img/portfolio/emoji_timeline.png" style="width:50px; height:auto" alt="">
             </a>
             <a class="chocolat-image" href="img/portfolio/emoji_storyboard.png" title="foo">
                 <img src="img/portfolio/emoji_storyboard.png" style="width:50px; height:auto" alt="">
             </a>
-            <a class="chocolat-image" href="img/portfolio/emoji_cropped.png" title="foo">
-                <img src="img/portfolio/emoji_cropped.png" style="width:50px; height:auto" alt="">
+            <a class="chocolat-image" href="img/portfolio/word2vec.png" title="foo">
+                <img src="img/portfolio/word2vec.png" style="width:50px; height:auto" alt="">
+            </a>
+            <a class="chocolat-image" href="img/portfolio/clustering.png" title="foo">
+                <img src="img/portfolio/clustering.png" style="width:50px; height:auto" alt="">
+            </a>
+            <a class="chocolat-image" href="img/portfolio/code_emojineering.png" title="foo">
+                <img src="img/portfolio/code_emojineering.png" style="width:50px; height:auto" alt="">
             </a>
         </div>
+        </br>
+        <a href="https://github.com/hatsy/Emojineering" target="_blank" > Follow the Project on GitHub </a>
 
         </br></br></br></br>
-        <row>
-            <div class="col-sm-2">
-                <h2> Role </h2>
+        <hr>
+        <div class="row">
+            <div class="col-sm-3">
+                <div class="h2_fitted"> Role </div>
             </div>
-            <div class="col-sm-10">
+            <div class="col-sm-9">
                 <p class = "p_projects">
                     Lead efforts in using Natural Language Processing techniques to handle
                     cleaning, supervised clustering, and classifying.
                 </p>
             </div>
-        </row>
-        <row>
-            <div class="col-sm-2">
-                <h2> Problem </h2>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-sm-3">
+                <div class="h2_fitted"> Motivation </div>
             </div>
-            <div class="col-sm-10">
+            <div class="col-sm-9">
                 <p class = "p_projects">
-                    It is well documented that emojis and emoticons <i> can </i> express meaning in our texting and social media posting in ways that simple words cannot. Why do some texts contain emojis and why do others not. Do emojis add semantic value? Can we extract sentiment? These questions are all pertinent to our project's goal of suggesting relevant emoji(s) for a given document.
+                    It is well documented that emojis and emoticons <i> can </i> express meaning in our texting and social media posting in ways that simple words cannot. Why do some texts contain emojis and why do others not. Do emojis add semantic value? Can we accurately extract sentiment? These questions are all pertinent to our project's goal--to create an emoji tool that can assign the appropriate emoji to a given piece of text. We stripped all emojis from each document in our training set (ie, nearly 1 Million tweets from 2013) and treated them as our target labels. If our predictions proved accurate enough, we would pursue further work into inserting emojis into larger corpuses.
                 </p>
             </div>
-        </row>
-        <row>
-            <div class="col-sm-2">
-                <h2> Solution </h2>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-sm-3">
+                <div class="h2_fitted"> Exploratory Work </div>
             </div>
-            <div class="col-sm-10">
+            <div class="col-sm-9">
                 <p class = "p_projects">
-                    We grouped our project into three main steps: cleaning our data, categorizing emojis, and predicting emojis. This project required lean and agile development. Because twitter data reflects 
-                    The final step of the process will be to classify the category of emoji, where an emoji is appropriate. 
+                    With a large dataset of dirty data, our first order of business was to clean our tweets and explore the question of why people even use emojis. As with many projects, cleaning the data took the bulk of all our time--normalizing handles and urls, removing retweets, distinguishing Enlglish tweets from other languages, and splitting hashtags. With over 700 possible emojis combined in varying degress, our next step was to disambiguate emoji use. We looked at the most commonly used Emojis using a frequency distribution, and discovered 'face' or 'person' related emojis composed the vast majority of emoji use (ie, roughly 80% of all tweets containing at least one). Similar work was done with bigrams and collocations. Although some insight was taken away from these more traditional NLP techniques, the outcomes were nonetheless wanting. We pursued a more unique method called Word2Vec, which trains on your entire corpus and creates a feature vector to determine similar words. The results were surprisingly informative, seeing as the tool was designed for words.  
                 </p>
             </div>
-        </row>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-sm-3">
+                <div class="h2_fitted"> Grouping Emojis </div>
+            </div>
+            <div class="col-sm-9">
+                <p class = "p_projects">
+                    Aware that predicting over 700 emojis was not feasible, we applied two different supervised learning techniques to create unbiased clusters of emojis based on correlation. Although the clusters made some sense semantically, they were not distributed in a way that reflected sentiment. After failing to use supervised learning techniques to create meaningful and well-distributed categories, we decided to manually categorize emojis with the keyword ‘face’.Although manual labeling introduced a certain level of bias, the grouping reflected a more typical use of emojis. Only face emojis that were used for labeling. We identified four meaningful groups: ‘non-human’, ‘love’, ‘happy’, and ‘despairing’. 
+                </p>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-sm-3">
+                <div class="h2_fitted"> Feature and Prediction </div>
+            </div>
+            <div class="col-sm-9">
+                <p class = "p_projects">
+                    We took a very aggressive approach to the feature engineering process. To predict the Emojis, we came up with a lengthly list of features: Number of punctuation, Number of hashtag, Sentiment score, IsReweets, Q-grams, Tfidf – using TfidfVectorizer, Count Vectorizer, Synset, and POS. Similarly we created a structured pipeline to test different sets of features and classifiers. Our accuracy scores did not prove as successful as we had hoped for. Future work would involve a deeper look into the structure of tweets, as more traditional NLP techniques that work on larger corpuses do not capture meanning as well.
+                </p>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-sm-3">
+                <div class="h2_fitted"> Reflection </div>
+            </div>
+            <div class="col-sm-9">
+                <p class = "p_projects">
+                    As previously mentioned, our findings inform the need for techniques that are more rigorous and unique to tweets. Because tweets are short in nature and specifically used as a conversational tool, we could do more analysis on how and why emojis are used. The features we created were suited for larger and more standardized pieces of text. Given this knowledge, we could take a number of additional steps for future work. Finding a way to link tweets by conversation could create richer documents. Conducting more rigorous sentiment analysis on how tweets are used would inform better feature engineering. Exploring other methods of clustering and categorizing emojis might reflect use of emoji more accurately. Pursue Word2Vec further, as this method afforded the best results. In the end, there is still much to do and the journey will not end here!
 
-        </br></br>
-        <p class = "p_projects"> Group Members: Daniel Chen, Hadrien Renold </p>
-    </br></br>
+                </p>
+            </div>
+        </div>
+
+        </br></br></br></br>
+        <p class = "p_projects" style="margin-left:0px;"> Group Members: Daniel Chen, Hadrien Renold </p>
+    </br>
         <a href="https://github.com/hatsy/Emojineering" target="_blank" class = "p_home" style="color:#1E4F53;" > Follow the Project on GitHub </a>
-    </br></br>
-    <a href="index.html#projects" class = "p_home img_responsive"  > home </a>    
+    </br>
+    </br>
+    <a href="index.html#projects" class = "p_home img_responsive"  > home</a>    
     </br></br>
     </div>
     

@@ -47,6 +47,14 @@ of those sections to manage the look and feel of the site. */
     background: #fff;
 }
 
+.services-section-2 {
+    height: 100%;
+    padding-top: 75px;
+    text-align: left;
+    /*background: #f7f7f7;*/
+    background: #fff;
+}
+
 .contact-section {
     height: 100%;
     padding-top: 75px;

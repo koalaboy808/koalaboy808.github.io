@@ -3,6 +3,8 @@
 <html lang="en">
 <head>
   	<meta charset="utf-8" />
+    <script src="js/bootstrap.min.js"></script>
+    <link href="css/bootstrap.css" rel="stylesheet">
     <link rel="stylesheet" href="css/chocolat.css" />
     <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
     <script type="text/javascript" src="js/jquery.chocolat.js"></script>
@@ -36,36 +38,116 @@
 		<p class = "p_projects" style="color: #7F7F7F;"> [Spatial Analytics] [Python]  [Machine Learning] [Folium] [Scikit-Learn] </p>
 		</br></br>
 
-		<a class="image featured"><img src="img/portfolio/crimesf_folium.png" class="img-responsive" alt="" style="height:350px;border:0, auto:width;"></a>
+		<a class="image featured"><img src="img/portfolio/dogwatch_title_cropped.png" class="img-responsive" alt="" style="height:350px;border:0, auto:width;"></a>
 
         <div id="example0">
+            <a class="chocolat-image" href="img/portfolio/dogwatch_title.png" title="foo">
+                <img src="img/portfolio/dogwatch_title.png" style="width:50px; height:auto" alt="">
+            </a>
+            <a class="chocolat-image" href="img/portfolio/table_crime.png" title="bar">
+                <img src="img/portfolio/table_crime.png" style="width:50px; height:auto" alt="">
+            </a>
+            <a class="chocolat-image" href="img/portfolio/exploration_crime.png" title="foo">
+                <img src="img/portfolio/exploration_crime.png" style="width:50px; height:auto" alt="">
+            </a>
+            <a class="chocolat-image" href="img/portfolio/sf_bar_green_crime.png" title="bar">
+                <img src="img/portfolio/sf_bar_green_crime.png" style="width:50px; height:auto" alt="">
+            </a>
             <a class="chocolat-image" href="img/portfolio/crimesf_folium.png" title="foo">
                 <img src="img/portfolio/crimesf_folium.png" style="width:50px; height:auto" alt="">
             </a>
-            <a class="chocolat-image" href="img/portfolio/crime_bar.png" title="bar">
-                <img src="img/portfolio/crime_bar.png" style="width:50px; height:auto" alt="">
+            <a class="chocolat-image" href="img/portfolio/crimesf_folium.png" title="foo">
+                <img src="img/portfolio/Crime_SF_Map.png" style="width:50px; height:auto" alt="">
             </a>
         </div>
-
+        </br>
+        <a href="https://github.com/koalaboy808/crimeSF" target="_blank" > Follow the Project on GitHub </a>
+        </br>
+        <a href="https://github.com/koalaboy808/crimeSF" target="_blank" class = "p_home" style="color:#1E4F53;" > Follow the Project on GitHub </a>
 		</br></br></br></br>
 
-		<p class = "p_projects">
-            San Francisco experiences no shortage of crime. A mixture of growing social and economic inequalities, housing disparity, and urban complexity all add
-            to this unique problem. The city recently released a large open data set on Kaggle for the best to try their hand at predicting category of crime.
-        </br></br>
-        <p class = "p_projects">
-            Given a granular set of locations, dates, and times of day, we were faced with the tricky task of creating valuable features at a more abstract level. We relied on visual exploratory analysis as our first method of extracting information. We then created new features and validated our scores using supervised learning techniques. 			
-        </p>
-        <p class = "p_projects">
-            Heavily involved in entire process of exploring data, developing visualizations, creating features, and buidling classifiers.
-        </p>
-		</br></br>
-		<p class = "p_projects"> Group Members: Daniel Chen </p>
+        <hr>
+        <div class="row">
+            <div class="col-sm-3">
+                <div class="h2_fitted"> Role </div>
+            </div>
+            <div class="col-sm-9">
+                <p class = "p_projects">
+                    Heavily involved in entire process of exploring data, developing visualizations, creating features, and buidling classifiers.
+                </p>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-sm-3">
+                <div class="h2_fitted"> Motivation </div>
+            </div>
+            <div class="col-sm-9">
+                <p class = "p_projects">
+                    San Francisco experiences no shortage of crime. A mixture of growing social and economic inequalities, housing disparity, and urban complexity all add
+                    to this unique problem. The City of San Francisco, in an effort to gain insight into and fight against crime, has solicited public assistance by publishing nearly 12 years of crime reports onto SFOpenData and developing a Kaggle competion with now more than over 800 teams across the country. Our goal was to predict the category of crime that would occur given a location and time.
 
-    </br></br>
+                </p>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-sm-3">
+                <div class="h2_fitted"> Exploratory Work </div>
+            </div>
+            <div class="col-sm-9">
+                <p class = "p_projects">
+                    There were a total of 38 crimes we attempted to accurately predict, as categorized by the City of San Francisco Police Department, with a training set of over 800,000 instances. Due to the large amount of data, we focused much of our preliminary exploratory work on viusalizing our data. Many of our initial assumptions were correct. As expected, the Southern district dominated the other districts in frequency of crime across the board. In similar fashion, Richmond and Park were the two safest districts. However, many assumptions were wrong as well. For instance, we visualized the ten most committed crimes by time of day. Non-criminal activity was more rampant in the morning than at night while larceny and theft remained consistent throughout the day. Aassault, surprisingly, was much less frequent during the night as compared to other times of the day. We were less biased and more rigorous in further work. This proved to be invaluable in the following steps.
+                </p>
+            </div>
+        </div>
+         <hr>
+        <div class="row">
+            <div class="col-sm-3">
+                <div class="h2_fitted"> Feature Selection </div>
+            </div>
+            <div class="col-sm-9">
+                <p class = "p_projects">
+                    Due to the granularity of the data we focused our efforts on creating more abstract levels of categorization. We created seasonal features, district type features, dangerous address features, dangerous data
+                    features, and an array of features purely based on time. In addition to the ingenuity of more generalized features, we
+                    needed to figure out the appropriate level of abstraction of these categories. For example, the ‘Time of Day’ feature was
+                    extracted from the original date time feature (as given by MM/DD/YYYY : %H%M%S). Partitioning the time of day into four buckets (as given by Morning, Afternoon, Night, Midnight) produced better results just with the intuition of what we thought constituted the
+                    time of day. Using simple histograms, however, we discovered a different story in the data. We continually refined our features in a similar fashion by examining our data to make informed decisions.
+                </p>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-sm-3">
+                <div class="h2_fitted"> Prediction </div>
+            </div>
+            <div class="col-sm-9">
+                <p class = "p_projects">
+                    We partitioned our data into folds of training sets and test sets using cross validation. The goal of the project
+                    would then be to train on our entire dataset, and given a set of new locations and times give a prediction for
+                    each of the 38 crimes. We created a pipeline using three different classifiers (Logistic Regression, BernoulliNB,
+                    and XGBClassifier) and fine-tuned each classifier using Grid Search. At the moment, we’re ranked in the top 60 out of nearly 900 other contestants.
+                </p>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-sm-3">
+                <div class="h2_fitted"> Reflection </div>
+            </div>
+            <div class="col-sm-9">
+                <p class = "p_projects">
+                    The exploratory work and feature creation were the most difficults parts of this project. Because the competition only offered data on location and time, though to differing degrees, much of the ingenuity came from discovering high variance features and creating categories for new features. Therefore, we spent the vast majority of our time performing exploratory work and refining our approach iteratively. Moving forward, we could do more work with fine-tuning our classifiers. There is also the possibility of acquiring data from outside sources, such as major events, housing and income information, and additional data from the police. Our model could also be used for re-allocating police resources effectively (ie, to areas which need more personal or equipment of a certain type)
+                </p>
+            </div>
+        </div>
+
+        </br></br></br></br>
+        <p class = "p_projects" style="margin-left:0px;"> Group Members: Daniel Chen </p>
+    </br>
         <a href="https://github.com/koalaboy808/crimeSF" target="_blank" class = "p_home" style="color:#1E4F53;" > Follow the Project on GitHub </a>
     </br></br>
-    <a href="index.html#projects" class = "p_home img_responsive"  > home </a>    
+    <a href="index.html#projects" class = "p_home img_responsive"  > home</a>    
     </br></br>
     </div>
   	

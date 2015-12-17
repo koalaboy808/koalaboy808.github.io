@@ -2,6 +2,8 @@
 <html>
     <head>
         <meta charset="utf-8" />
+        <script src="js/bootstrap.min.js"></script>
+        <link href="css/bootstrap.css" rel="stylesheet">
         <link rel="stylesheet" href="css/chocolat.css" />
         <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
         <script type="text/javascript" src="js/jquery.chocolat.js"></script>
@@ -33,7 +35,7 @@
 
 
 
-        <a class="image featured"><img src="img/portfolio/findnride_homepage.png" class="img-responsive" alt="" style="height:350px;border:0, auto:width;"></a>
+        <a href="http://find-and-ride.herokuapp.com/" target="_blank" class="image featured"><img src="img/portfolio/findnride_homepage.png" class="img-responsive" alt="" style="height:350px;border:0, auto:width;"></a>
 
         <div id="example0">
             <a class="chocolat-image" href="img/portfolio/webarch_storyboard.png" title="foo">
@@ -49,28 +51,77 @@
                 <img src="img/portfolio/webarch_mockup.png" style="width:50px; height:auto" alt="">
             </a>
         </div>
+        </br>
+        <a href="http://find-and-ride.herokuapp.com/" target="_blank" > See the working web application here! </a>
 
         </br></br></br></br>
 
-        <p class = "p_projects">
-            Build a RESTful web application that utiziles good web architcture practice. You were free to choose a real-world problem of your choice given that you leveraged a set of current industry accepted technologies. 
-        </p>
-        </br></br>
+        <hr>
+        <div class="row">
+            <div class="col-sm-3">
+                <div class="h2_fitted"> Role </div>
+            </div>
+            <div class="col-sm-9">
+                <p class = "p_projects">
+                    Actively involved in the entire fullstack development processes. Specifically tackled Django integration and Uber and Google APIs.
+                </p>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-sm-3">
+                <div class="h2_fitted"> Motivation </div>
+            </div>
+            <div class="col-sm-9">
+                <p class = "p_projects">
+                    Our team was given the freedom to build a RESTful web application using current web technologies. We were all motivated by the idea of creating a platform that integrated mobility in a city with fast querying abilities. After deliberation on how to scope our project, we decided to build a tool that queried for food options from Yelp. The following steps would be to integrate Google and Uber APIs for location, direction, and mode of transportation.
+                </p>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-sm-3">
+                <div class="h2_fitted">  Technologies Used </div>
+            </div>
+            <div class="col-sm-9">
+                <p class = "p_projects">
+                    
+                    For a number of reasons, Django was used as the framework for our application. Although for the scope of the project Flask would have been more appropriate, Django could be scaled for future work. Django also integrates well with Postgres, Heroku, and Github. We deemed workflow and modularity as primary concerns for this project. Postgres was used as a means to potentially conduct a more rigorous analysis of spatial data—ie, PostGIS. In terms of APIs, Google, Uber and Yelp were used for their comprehensiveness. 
+                </p>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-sm-3">
+                <div class="h2_fitted">  Demonstration </div>
+            </div>
+            <div class="col-sm-9">
+                <p class = "p_projects">
+                    By the end of the project, we created a fully functioning application that integrated all of the aforementioned technologies onto a Heroku server. The motivation for our prototype was to build a seamless and intuitive web application for searching food and finding the best route. As can be viewed in our demo, the landing page takes the user to an introductory page—who are we and what can you hope to expect from our service? The following page provides a simple user experience of inputting a single keyword. Using the Yelp API, our web application matches you with the ten closest spots with that keyword food item. The Google API provides the directions and the Uber API makes the process even simpler. One word gets you the what, the where, the how, and the when. 
+                </p>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-sm-3">
+                <div class="h2_fitted">  Reflection </div>
+            </div>
+            <div class="col-sm-9">
+                <p class = "p_projects">
+                    
+                    Although only a team of four, this project stressed the importance of establishing workflow and other work conventions before the initiation of development. Hosting our web application using Heroku and Github in conjunction was critical to the success of our application given the short amount of time allotted. Different team members worked on different APIs with the hope of integrating the technologies during the final stage. However, working in JavaScript versus Python made sending data incompatible in certain situations. The takeaway of this project was to streamline the technologies used and communicate regularly.  
+                </p>
+            </div>
+        </div>
 
-        <p class = "p_projects"> 
-            The web application (using Django, HTML/CSS/Javascript, Postgres, and Heroku) finds the best route to a food joint based on the user's keyword input. Query the Yelp API for the food item and provide the the user a list of options nearby. It then uses a combination of Google and Uber APIs to list a number of transporation methods and their routes. </p>
-            </br></br>
-           
-            I was actively involved in the entire full stack development process. I specficially tackled Django integration and handling the Google and Uber APIs.
-        </p>
 
         </br></br>
         <p class = "p_projects"> Group Members: Brian Goodness, Keshav Potluri, Richa Prajapati </p>
         
 </br></br>
-        <a href="https://github.com/briangoodness/FATnLAZY" target="_blank" class = "p_home" style="color:#1E4F53;" > Follow the Project on GitHub </a>
+        <a href="http://find-and-ride.herokuapp.com/" target="_blank" class = "p_home" style="color:#1E4F53;" > See the working web application here! </a>
     </br></br>
-    <a href="index.html#projects" class = "p_home img_responsive"  > home </a>    
+    <a href="index.html#projects" class = "p_home img_responsive"  > home</a>    
     </br></br>
     </div>
 

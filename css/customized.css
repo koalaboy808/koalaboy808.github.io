@@ -41,35 +41,7 @@
 	font-weight: bold;
 }
 
-.box {
-		background: #ffffff;
-		/*border-bottom: solid 1px #ccc;*/
-        padding: 5px;
-	}
 
-.box .image.featured {
-	position: relative;
-	height: auto;
-}
-
-.box .p {
-    /*padding-left: 70px;*/
-    /*padding-top: 15px;*/
-    font-size: 18px;
-    /*letter-spacing: 0.2px;*/
-    margin: 0 0 10px;
-    font-family: Oswald;
-}
-
-.box .h2 {
-    /*padding-left: 70px;*/
-    /*padding-top: 15px;*/
-    /*letter-spacing: 0.2px;*/
-    margin: 0 0 10px;
-    font-size: 30px;
-    font-family: Oswald;
-    font-weight: bold;
-}
 
 /*p .under_heading {
 	font-weight: italic;
@@ -156,8 +128,17 @@ p {
 
 .container-fluid {
     padding-top: 50px;
-  padding-right: 250px;
-  padding-left: 250px;
+  padding-right: 225px;
+  padding-left: 225px;
+  padding-bottom: 70px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.container-projects {
+    padding-top: 100px;
+  padding-right: 130px;
+  padding-left: 130px;
   padding-bottom: 70px;
   margin-right: auto;
   margin-left: auto;
@@ -183,6 +164,7 @@ p {
     font-family: Oswald;
     font-weight: normal;
     color: #4B4B4B;
+    margin: 0 0 0 0;
 }
 
 .p_home {
@@ -199,16 +181,34 @@ p {
 
 .p_projects {
     padding-left: 0px;
-    /*padding-top: 15px;*/
+    /*padding-bottom: 15px;*/
     font-size: 20px;
     color: #4B4B4B;
     /*letter-spacing: 0.2px;*/
-    margin: 0 0 10px;
+/*    margin: 0 0 10px;*/
     font-family: Oswald;
     line-height: 150%;
     font-weight: normal;
     /*text-decoration: underline;*/
 }
+
+.h2_fitted {
+    font-size: 30px;
+    font-family: Oswald;
+    font-weight: normal;
+    text-align: left;
+    vertical-align: top;
+    border: none;
+    line-height: 150%;
+    margin: 0px 0px 0px 0px;
+    color: #4B4B4B;
+
+}
+
+.row {
+    padding-bottom: 10px;
+}
+
 
 table {
     padding-left: 70px;
@@ -219,4 +219,69 @@ th, td {
     border: 1px solid black;
     border-collapse: collapse;
     text-align: center;
+}
+
+.box {
+        background: #ffffff;
+        /*border-bottom: solid 1px #ccc;*/
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-bottom: 5px;
+    }
+
+.box .image.featured {
+    position: relative;
+    height: auto;
+}
+
+.box .p {
+    /*padding-left: 70px;*/
+    /*padding-top: 15px;*/
+    font-size: 18px;
+    /*letter-spacing: 0.2px;*/
+    margin: 0 0 10px;
+    font-family: Oswald;
+}
+
+.box .h2 {
+    /*padding-left: 70px;*/
+    /*padding-top: 15px;*/
+    /*letter-spacing: 0.2px;*/
+    margin: 0 0 10px;
+    font-size: 30px;
+    font-family: Oswald;
+    font-weight: bold;
+}
+
+.box .imgWrap {
+  position: relative;
+/*  height: 200px;
+  width: 307px;*/
+}
+
+.box .imgDescription {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  /*background: white;*/
+  background: rgba(255,255,255, 0.92);
+  
+  /*border-bottom: black;*/
+  color: black;
+
+
+  visibility: hidden;
+  opacity: 0;
+
+  /*remove comment if you want a gradual transition between states
+  -webkit-transition: visibility opacity 0.2s;
+  */
+}
+
+
+.imgWrap:hover .imgDescription {
+  visibility: visible;
+  opacity: 1;
 }
